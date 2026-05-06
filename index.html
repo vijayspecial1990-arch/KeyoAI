@@ -1,142 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — KeyoAI</title>
-  <meta name="description" content="Privacy Policy for the KeyoAI keyboard app." />
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --text: #0f172a;
-      --muted: #64748b;
-      --accent: #4f46e5;
-      --border: #e2e8f0;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      font-size: 1rem;
-      line-height: 1.65;
-      color: var(--text);
-      background: var(--bg);
-    }
-    .wrap {
-      max-width: 44rem;
-      margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
-    }
-    header {
-      margin-bottom: 2rem;
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid var(--border);
-    }
-    h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin: 0 0 0.35rem;
-      color: var(--accent);
-    }
-    .meta {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    h2 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin: 2rem 0 0.75rem;
-    }
-    p, ul { margin: 0 0 1rem; }
-    ul { padding-left: 1.25rem; }
-    li { margin-bottom: 0.35rem; }
-    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
-    a:hover { text-decoration: none; }
-    .note {
-      font-size: 0.875rem;
-      color: var(--muted);
-      padding: 0.75rem 1rem;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-  </style>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="AI Trading Agent">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>AI Trading Agent</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>KeyoAI — Privacy Policy</h1>
-      <p class="meta">Last updated: March 28, 2026</p>
-    </header>
+  <!--
+    Privacy Policy
+    - This app is primarily a native iOS/Android app.
+    - We include a static privacy policy here for GitHub Pages hosting.
+    - For a standalone page, open /privacy.html (also included in /web).
+  -->
+  <noscript>
+    <main style="max-width: 900px; margin: 40px auto; padding: 0 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.55;">
+      <h1>Privacy Policy</h1>
+      <p><strong>AI Trading Agent</strong> ("we", "our", or "us") respects your privacy. This Privacy Policy explains how the app handles information.</p>
 
-    <p class="note">
-      This policy describes how KeyoAI (“we”, “us”) handles information when you use our iOS app and keyboard extension.
-      It is provided for transparency and App Store disclosure. If you need legal advice for your situation, consult a qualified professional.
-    </p>
+      <h2>Summary</h2>
+      <ul>
+        <li>We process chart screenshots you choose to upload for analysis.</li>
+        <li>We may send extracted text (OCR) and analysis prompts to our AI provider to generate results.</li>
+        <li>We do not sell your personal data.</li>
+        <li>Analysis history may be stored locally on your device.</li>
+      </ul>
 
-    <h2>What we collect</h2>
-    <ul>
-      <li><strong>Keyboard and text.</strong> Key presses are handled on your device. AI features may send <strong>selected text, prompts, or instructions</strong> to our servers only when you use those features. On iOS, network-based AI features require <strong>Full Access</strong> for the keyboard, as required by Apple for third-party keyboards that use the network.</li>
-      <li><strong>Subscriptions.</strong> Purchase status is validated with Apple through StoreKit. We do not receive your Apple ID password.</li>
-      <li><strong>Technical data.</strong> Our servers may receive standard data needed to operate the service (for example, IP address for security and rate limiting, timestamps, and error logs). We do not use this for advertising.</li>
-    </ul>
+      <h2>Information You Provide</h2>
+      <ul>
+        <li><strong>Chart images</strong>: screenshots/photos you select from your gallery or camera.</li>
+        <li><strong>Text extracted from images (OCR)</strong>: the app may extract visible text (e.g., symbol, timeframe, levels) from the chart image.</li>
+      </ul>
 
-    <h2>How we use information</h2>
-    <ul>
-      <li>To provide AI-assisted writing, suggestions, translation, and related features you request.</li>
-      <li>To operate, secure, and improve the service (including abuse prevention and rate limiting).</li>
-      <li>To process subscriptions and restore purchases through Apple.</li>
-    </ul>
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>To generate an AI trading analysis and display it to you.</li>
+        <li>To show and manage your on-device analysis history.</li>
+        <li>To support app features like sharing a result card.</li>
+      </ul>
 
-    <h2>Third-party services</h2>
-    <p>
-      We use infrastructure and AI providers (for example, <strong>Supabase</strong> for hosting and authentication-related services, and <strong>AI model providers</strong> such as DeepSeek accessed through our secure proxy). Those providers process prompts and technical metadata as needed to fulfill requests. Their use is subject to their respective terms and privacy policies.
-    </p>
+      <h2>AI Processing</h2>
+      <p>When you request an analysis, the app may send the extracted text and prompt content to an AI service provider to generate the response. The content sent is used to produce your result.</p>
 
-    <h2>Data retention</h2>
-    <p>
-      We design the service so that message content is processed to deliver your request and is not kept longer than necessary for operation, debugging, and legal compliance. Exact retention may evolve; we will update this page for material changes.
-    </p>
+      <h2>Data Storage</h2>
+      <ul>
+        <li><strong>On-device</strong>: the app may store recent analysis results on your device so you can revisit them quickly.</li>
+        <li><strong>Remote</strong>: the app may retrieve configuration required to run the service (for example, API configuration) from our backend.</li>
+      </ul>
 
-    <h2>Your choices</h2>
-    <ul>
-      <li>You can disable <strong>Full Access</strong> or remove KeyoAI in <strong>Settings → General → Keyboard</strong> on your iPhone. Some AI features may not work without Full Access.</li>
-      <li>You can stop using the app or delete it at any time.</li>
-    </ul>
+      <h2>Sharing</h2>
+      <p>If you choose to share a result, the app uses the system share sheet to send content to apps you select (e.g., Messages, WhatsApp). What happens after sharing depends on the recipient app’s policies.</p>
 
-    <h2>Children</h2>
-    <p>
-      KeyoAI is not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you believe we have collected such information, contact us and we will take appropriate steps.
-    </p>
+      <h2>Subscriptions & Purchases</h2>
+      <p>Subscriptions are handled by Apple/Google through their in-app purchase systems. We do not collect or store your payment card details.</p>
 
-    <h2>International users</h2>
-    <p>
-      If you use the app from outside your home country, your information may be processed in countries where we or our service providers operate.
-    </p>
+      <h2>Children’s Privacy</h2>
+      <p>The app is not intended for children under 13. We do not knowingly collect personal information from children.</p>
 
-    <h2>Changes</h2>
-    <p>
-      We may update this Privacy Policy from time to time. The “Last updated” date at the top will change when we do. Continued use of the app after changes means you accept the updated policy.
-    </p>
+      <h2>Security</h2>
+      <p>We take reasonable steps to protect information processed by the app. No method of transmission or storage is 100% secure.</p>
 
-    <h2>Contact</h2>
-    <p>
-      Questions about this policy or your data:
-      <a href="mailto:taskandtrade7@gmail.com">taskandtrade7@gmail.com</a>
-    </p>
+      <h2>Changes</h2>
+      <p>We may update this Privacy Policy from time to time. The latest version will be posted at this URL.</p>
 
-    <footer>
-      © KeyoAI. All rights reserved.
-    </footer>
-  </div>
+      <h2>Contact</h2>
+      <p>If you have questions, contact us at: <strong>support@aitradingagent.app</strong></p>
+
+      <p style="margin-top: 28px; font-size: 12px; opacity: 0.75;">Last updated: 2026-05-06</p>
+      <p style="margin-top: 10px;"><a href="privacy.html">Open dedicated privacy policy page</a></p>
+    </main>
+  </noscript>
+
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
